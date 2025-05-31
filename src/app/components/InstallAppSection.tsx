@@ -36,18 +36,18 @@ export default function InstallAppSection() {
       <div className="flex flex-col md:flex-row items-center justify-between max-w-6xl w-full mt-16 gap-10">
         <div className="flex gap-4">
           <Image
-            src="/images/app-screenshot-1.png"
+            src="/Shadow.png"
             alt="App Screenshot 1"
-            width={200}
-            height={400}
-            className="rounded-xl shadow-lg"
+            width={300}
+            height={500}
+            className=" rounded-xl  "
           />
           <Image
-            src="/images/app-screenshot-2.png"
+            src="/ima.png"
             alt="App Screenshot 2"
-            width={200}
-            height={400}
-            className="rounded-xl shadow-lg"
+            width={300}
+            height={500}
+            className="rounded-xl "
           />
         </div>
         <div className="max-w-md text-center md:text-left">
@@ -57,7 +57,7 @@ export default function InstallAppSection() {
           </p>
           <div className="flex gap-4 justify-center md:justify-start">
             <Image
-              src="/images/google-play.png"
+              src="/shadow.png"
               alt="Google Play"
               width={130}
               height={40}

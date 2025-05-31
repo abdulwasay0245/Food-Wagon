@@ -8,6 +8,7 @@ import FeaturedRestaurants from "./components/FeaturedRestaurant";
 import InstallAppSection from "./components/InstallAppSection";
 import Footer from "./components/Footer";
 import OrderCTASection from "./components/OrderSection";
+import FoodDeals from "./components/Fooditems";
 
 export default function FoodWagonLanding() {
   return (
@@ -19,6 +20,7 @@ export default function FoodWagonLanding() {
       <PopularItems />
       <FeaturedRestaurants />
       <InstallAppSection />
+      <FoodDeals />
       <OrderCTASection />
       <Footer />
    </>
