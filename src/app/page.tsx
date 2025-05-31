@@ -4,6 +4,10 @@ import Hero from "./components/Hero";
 import ProductSectionOne from "./components/ProductSectionOne";
 import HowItWorks from "./components/HowItWorks";
 import PopularItems from "./components/PopularItem";
+import FeaturedRestaurants from "./components/FeaturedRestaurant";
+import InstallAppSection from "./components/InstallAppSection";
+import Footer from "./components/Footer";
+import OrderCTASection from "./components/OrderSection";
 
 export default function FoodWagonLanding() {
   return (
@@ -13,6 +17,10 @@ export default function FoodWagonLanding() {
       <ProductSectionOne />
       <HowItWorks />
       <PopularItems />
+      <FeaturedRestaurants />
+      <InstallAppSection />
+      <OrderCTASection />
+      <Footer />
    </>
     
 

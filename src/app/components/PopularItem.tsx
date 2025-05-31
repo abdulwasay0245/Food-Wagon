@@ -48,7 +48,7 @@ export default function PopularItems() {
   };
 
   return (
-    <div className="py-12 text-center relative bg-white ">
+    <section className="py-12 text-center relative bg-white ">
       <h2 className="text-2xl font-bold mb-8 text-black">Popular items</h2>
       <div className="relative">
         <button
@@ -92,6 +92,6 @@ export default function PopularItems() {
           <ChevronRight className="text-white" />
         </button>
       </div>
-    </div>
+    </section>
   );
 }
