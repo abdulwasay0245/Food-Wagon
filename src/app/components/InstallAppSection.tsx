@@ -43,7 +43,7 @@ export default function InstallAppSection() {
             className=" rounded-xl  "
           />
           <Image
-            src="/ima.png"
+            src="/mobile.png"
             alt="App Screenshot 2"
             width={300}
             height={500}
@@ -57,14 +57,14 @@ export default function InstallAppSection() {
           </p>
           <div className="flex gap-4 justify-center md:justify-start">
             <Image
-              src="/shadow.png"
+              src="/googleplay.png"
               alt="Google Play"
               width={130}
               height={40}
               className="cursor-pointer"
             />
             <Image
-              src="/images/app-store.png"
+              src="/appstore.png"
               alt="App Store"
               width={130}
               height={40}

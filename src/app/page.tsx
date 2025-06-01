@@ -9,6 +9,7 @@ import InstallAppSection from "./components/InstallAppSection";
 import Footer from "./components/Footer";
 import OrderCTASection from "./components/OrderSection";
 import FoodDeals from "./components/Fooditems";
+import FoodSearchCarousel from "./components/FoodSearchCrousel";
 
 export default function FoodWagonLanding() {
   return (
@@ -19,6 +20,7 @@ export default function FoodWagonLanding() {
       <HowItWorks />
       <PopularItems />
       <FeaturedRestaurants />
+      <FoodSearchCarousel />
       <InstallAppSection />
       <FoodDeals />
       <OrderCTASection />
