@@ -20,7 +20,7 @@ export default function Hero() {
                 placeholder="Enter Your Address"
                 className="flex-1 px-4 py-2 outline-none"
               />
-              <button className="bg-orange-500 text-white px-6 py-2">Find Food</button>
+              <button className="bg-orange-500 text-white px-1 md:px-6 py-2">Find Food</button>
             </div>
           </div>
         </div>

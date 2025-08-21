@@ -47,7 +47,7 @@ export default function InstallAppSection() {
             alt="App Screenshot 2"
             width={300}
             height={500}
-            className="rounded-xl "
+            className=" hidden lg:block rounded-xl "
           />
         </div>
         <div className="max-w-md text-center md:text-left">

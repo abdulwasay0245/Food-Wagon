@@ -34,7 +34,7 @@ export default function ProductSectionOne(){
     ]
     return(
         <section>
-            <div className="grid grid-cols-4 gap-2 mx-auto bg-white py-16 text-black items-center">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-2 mx-auto bg-white py-16 text-black items-center">
                 {products.map((product) => (
                     <div className="flex flex-col  items-center  justify-center" key={product.id}>
                         <Image src={product.image} alt={product.name} width={300} height={300} />
