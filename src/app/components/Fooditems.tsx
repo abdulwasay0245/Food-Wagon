@@ -29,15 +29,15 @@ const foodItems = [
 
 const FoodDeals = () => {
   return (
-    <div className="flex flex-col gap-16 py-24 px-6 lg:px-20 bg-white">
+    <div className="flex flex-col gap-12 py-16 px-6 lg:px-20 bg-white">
       {foodItems.map((item, index) => (
         <div
           key={index}
-          className={`flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20 rounded-[40px] overflow-hidden bg-white shadow-2xl shadow-gray-100 border border-gray-50 group ${
+          className={`flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-16 rounded-3xl overflow-hidden bg-white shadow-xl shadow-gray-100/50 border border-gray-50 group ${
             item.reverse ? "lg:flex-row-reverse" : ""
           }`}
         >
-          <div className="relative w-full lg:w-3/5 h-[400px] overflow-hidden">
+          <div className="relative w-full lg:w-3/5 h-[320px] lg:h-[350px] overflow-hidden">
             <Image
               src={item.image}
               alt={item.title}
@@ -45,8 +45,8 @@ const FoodDeals = () => {
               className="object-cover group-hover:scale-105 transition-transform duration-700"
             />
           </div>
-          <div className="flex flex-col justify-center gap-8 p-10 lg:p-16 lg:w-2/5">
-            <h2 className="text-4xl lg:text-5xl font-black text-gray-900 leading-tight">
+          <div className="flex flex-col justify-center gap-6 p-8 lg:p-12 lg:w-2/5">
+            <h2 className="text-3xl lg:text-4xl font-black text-gray-900 leading-tight">
               {item.title.split(item.highlight).map((part, i) => (
                 <span key={i}>
                   {part}
@@ -54,12 +54,12 @@ const FoodDeals = () => {
                 </span>
               ))}
             </h2>
-            <p className="text-xl text-gray-600 font-medium leading-relaxed">
+            <p className="text-lg text-gray-600 font-medium leading-relaxed">
               {item.description}
             </p>
-            <button className="bg-orange-500 hover:bg-orange-600 text-white font-black py-5 px-10 rounded-2xl shadow-xl shadow-orange-100 transition-all active:scale-95 w-fit flex items-center gap-3 text-lg">
+            <button className="bg-orange-500 hover:bg-orange-600 text-white font-black py-4 px-8 rounded-xl shadow-lg shadow-orange-50 transition-all active:scale-95 w-fit flex items-center gap-2.5 text-base">
               {item.buttonLabel}
-              <ArrowRight size={20} />
+              <ArrowRight size={18} />
             </button>
           </div>
         </div>
