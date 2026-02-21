@@ -1,120 +1,108 @@
-import { Instagram, Facebook, Twitter, Mail } from 'lucide-react';
+'use client';
+import { Instagram, Facebook, Twitter, ArrowUp } from 'lucide-react';
 
 export default function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
-    <footer className="bg-zinc-900 text-white w-full  pt-16 px-6 lg:px-20 text-sm">
-      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
-        <div>
-          <h4 className="font-semibold mb-4">Our top cities</h4>
-          <ul className="space-y-2">
-            <li>San Francisco</li>
-            <li>Miami</li>
-            <li>San Diego</li>
-            <li>East Bay</li>
-            <li>Long Beach</li>
-          </ul>
+    <footer className="bg-zinc-950 text-white w-full pt-24 px-6 lg:px-20 text-sm overflow-hidden relative">
+      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-orange-500 via-yellow-400 to-orange-500"></div>
+      
+      <div className="grid grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 mb-20">
+        <div className="col-span-2 lg:col-span-1 border-r border-zinc-800 pr-8">
+           <span className="text-orange-500 text-3xl font-black italic flex items-center gap-2 mb-8">
+            <span className="text-4xl">🍔</span> foodwagon
+          </span>
+          <p className="text-zinc-500 font-medium leading-relaxed">
+            The best food delivery service in the city. Fast, reliable, and always delicious.
+          </p>
         </div>
-        <div className="mt-8 md:mt-0">
-          <ul className="space-y-2">
-            <li>Los Angeles</li>
-            <li>Washington DC</li>
-            <li>Seattle</li>
-            <li>Portland</li>
-            <li>Nashville</li>
-          </ul>
-        </div>
-        <div className="mt-8 md:mt-0">
-          <ul className="space-y-2">
-            <li>New York City</li>
-            <li>Orange County</li>
-            <li>Atlanta</li>
-            <li>Charlotte</li>
-            <li>Denver</li>
-          </ul>
-        </div>
-        <div className="mt-8 md:mt-0">
-          <ul className="space-y-2">
-            <li>Chicago</li>
-            <li>Phoenix</li>
-            <li>Las Vegas</li>
-            <li>Sacramento</li>
-            <li>Oklahoma City</li>
-          </ul>
-        </div>
-        <div className="mt-8 md:mt-0">
-          <ul className="space-y-2">
-            <li>Columbus</li>
-            <li>New Mexico</li>
-            <li>Albuquerque</li>
-            <li>Sacramento</li>
-            <li>New Orleans</li>
-          </ul>
-        </div>
-      </div>
 
-      <hr className="my-10 border-zinc-700" />
+        <div className="space-y-6">
+          <h4 className="font-black text-xl text-white tracking-tight">Our top cities</h4>
+          <ul className="space-y-3 text-zinc-400 font-medium">
+            <li className="hover:text-orange-500 cursor-pointer transition-colors">San Francisco</li>
+            <li className="hover:text-orange-500 cursor-pointer transition-colors">Miami</li>
+            <li className="hover:text-orange-500 cursor-pointer transition-colors">San Diego</li>
+            <li className="hover:text-orange-500 cursor-pointer transition-colors">East Bay</li>
+            <li className="hover:text-orange-500 cursor-pointer transition-colors">Long Beach</li>
+          </ul>
+        </div>
 
-      <div className="grid md:grid-cols-4 gap-10">
-        <div>
-          <h4 className="font-semibold mb-4">Company</h4>
-          <ul className="space-y-2">
-            <li>About us</li>
-            <li>Team</li>
-            <li>Careers</li>
-            <li>Blog</li>
+        <div className="space-y-6 hidden md:block">
+           <h4 className="text-transparent font-black text-xl tracking-tight select-none">.</h4>
+          <ul className="space-y-3 text-zinc-400 font-medium">
+            <li className="hover:text-orange-500 cursor-pointer transition-colors">Los Angeles</li>
+            <li className="hover:text-orange-500 cursor-pointer transition-colors">Washington DC</li>
+            <li className="hover:text-orange-500 cursor-pointer transition-colors">Seattle</li>
+            <li className="hover:text-orange-500 cursor-pointer transition-colors">Portland</li>
+            <li className="hover:text-orange-500 cursor-pointer transition-colors">Nashville</li>
           </ul>
         </div>
-        <div>
-          <h4 className="font-semibold mb-4">Contact</h4>
-          <ul className="space-y-2">
-            <li>Help & Support</li>
-            <li>Partner with us</li>
-            <li>Ride with us</li>
+
+        <div className="space-y-6">
+          <h4 className="font-black text-xl text-white tracking-tight">Company</h4>
+          <ul className="space-y-3 text-zinc-400 font-medium">
+            <li className="hover:text-orange-500 cursor-pointer transition-colors">About us</li>
+            <li className="hover:text-orange-500 cursor-pointer transition-colors">Team</li>
+            <li className="hover:text-orange-500 cursor-pointer transition-colors">Careers</li>
+            <li className="hover:text-orange-500 cursor-pointer transition-colors">Blog</li>
           </ul>
         </div>
-        <div>
-          <h4 className="font-semibold mb-4">Legal</h4>
-          <ul className="space-y-2">
-            <li>Terms & Conditions</li>
-            <li>Refund & Cancellation</li>
-            <li>Privacy Policy</li>
-            <li>Cookie Policy</li>
-          </ul>
-        </div>
-        <div>
-          <h4 className="font-semibold mb-4">FOLLOW US</h4>
-          <div className="flex space-x-4 mb-6">
-            <Instagram className="text-white hover:text-orange-400 cursor-pointer" />
-            <Facebook className="text-white hover:text-orange-400 cursor-pointer" />
-            <Twitter className="text-white hover:text-orange-400 cursor-pointer" />
+
+        <div className="space-y-8 col-span-2 lg:col-span-1">
+          <div>
+            <h4 className="font-black text-xl text-white tracking-tight mb-6">FOLLOW US</h4>
+            <div className="flex space-x-4">
+              <div className="p-3 bg-zinc-900 rounded-2xl hover:bg-orange-500 transition-all cursor-pointer group">
+                <Instagram className="text-white group-hover:scale-110" size={20} />
+              </div>
+              <div className="p-3 bg-zinc-900 rounded-2xl hover:bg-orange-500 transition-all cursor-pointer group">
+                <Facebook className="text-white group-hover:scale-110" size={20} />
+              </div>
+              <div className="p-3 bg-zinc-900 rounded-2xl hover:bg-orange-500 transition-all cursor-pointer group">
+                <Twitter className="text-white group-hover:scale-110" size={20} />
+              </div>
+            </div>
           </div>
-          <p className="mb-2 font-semibold">Receive exclusive offers in your mailbox</p>
-          <div className="flex">
-            <div className="flex items-center bg-zinc-800 px-3 rounded-l-md w-full">
-              <Mail className="text-gray-400" size={16} />
+          
+          <div className="space-y-4">
+            <p className="font-bold text-zinc-300">Receive exclusive offers</p>
+            <div className="flex bg-zinc-900 p-1.5 rounded-2xl border border-zinc-800 focus-within:border-orange-500 transition-all shadow-xl">
               <input
                 type="email"
-                placeholder="Enter Your email"
-                className="bg-transparent text-white px-2 py-2 w-full focus:outline-none"
+                placeholder="Enter email"
+                className="bg-transparent text-white px-4 py-2 w-full focus:outline-none font-medium"
               />
+              <button className="bg-orange-500 text-white font-black px-6 py-2 rounded-xl shadow-lg hover:bg-orange-600 transition-all active:scale-95">
+                JOIN
+              </button>
             </div>
-            <button className="bg-gradient-to-r from-orange-400 to-orange-500 text-white font-semibold px-4 py-2 rounded-r-md shadow-md">
-              Subscribe
-            </button>
           </div>
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-between items-center text-gray-400 text-xs mt-10 pb-6">
-        <p>
-          All rights Reserved ©{' '}
-          <span className="text-white font-semibold">Your Company, 2021</span>
-        </p>
-        <p className="mt-2 md:mt-0">
-          Made with <span className="text-yellow-500">🤍</span> by{' '}
-          <span className="font-semibold text-white">Themewagon</span>
-        </p>
+      <div className="border-t border-zinc-900 py-12 flex flex-col md:flex-row justify-between items-center gap-8 relative">
+        <div className="flex flex-col md:flex-row items-center gap-4 text-zinc-500 font-medium">
+          <p>© {new Date().getFullYear()} <span className="text-white font-black">FOODWAGON</span></p>
+          <span className="hidden md:block opacity-20">|</span>
+          <p>All Rights Reserved</p>
+        </div>
+        
+        <button 
+          onClick={scrollToTop}
+          className="bg-zinc-900 p-4 rounded-full border border-zinc-800 hover:border-orange-500 hover:text-orange-500 transition-all group lg:absolute lg:left-1/2 lg:-translate-x-1/2"
+        >
+          <ArrowUp className="group-hover:-translate-y-1 transition-transform" size={24} />
+        </button>
+
+        <div className="text-zinc-500 font-medium">
+          Made with <span className="text-orange-500">❤️</span> by <span className="text-white font-black hover:text-orange-500 cursor-pointer transition-colors">Themewagon</span>
+        </div>
       </div>
     </footer>
   );
 }
+

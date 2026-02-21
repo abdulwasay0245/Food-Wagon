@@ -9,7 +9,7 @@ import InstallAppSection from "./components/InstallAppSection";
 import Footer from "./components/Footer";
 import OrderCTASection from "./components/OrderSection";
 import FoodDeals from "./components/Fooditems";
-import FoodSearchCarousel from "./components/FoodSearchCrousel";
+import FoodSearchCarousel from "./components/FoodSearchCarousel";
 
 export default function FoodWagonLanding() {
   return (
